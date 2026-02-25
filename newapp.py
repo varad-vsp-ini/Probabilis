@@ -25,7 +25,7 @@ st.markdown("""
         border-radius: 15px;
         padding: 25px;
         margin-bottom: 20px;
-        box-shadow: 0 0 15px rgba(255, 75, 145, 0.2);
+        box-shadow: 0 0 20px rgba(255, 75, 145, 0.2);
         color: #FF4B91;
         font-family: 'Georgia', serif;
         text-align: center;
@@ -95,13 +95,12 @@ st.markdown("""
     
     </style>
 """, unsafe_allow_html=True)
-with st.container():
-    st.markdown("""
-    <div class="window-box">
-        "Security is not a product, but a process." — Bruce Schneier
-    </div>
-    """, unsafe_allow_html=True)
 st.markdown("<div class='header'>🔐 PROBABILIS</div>", unsafe_allow_html=True)
+st.markdown("""
+<div class="window-box">
+    "Security is not a product, but a process." — Bruce Schneier
+</div>
+""", unsafe_allow_html=True)
 
 # --- PERSONA DATABASE ---
 # Characters from Hollywood and Bollywood
@@ -224,6 +223,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
