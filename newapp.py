@@ -17,7 +17,7 @@ st.markdown("""
         font-family: 'Georgia', serif !important; 
     }
     h1, h2, h3, h4, h5, h6, .header, .stTitle {
-        font-family: 'Abril Fatface', cursive !important;
+        font-family: 'Abril Fatface', serif !important;
     }
     @keyframes neonPulse {
         0%, 100% { box-shadow: 0 0 15px rgba(255,75,145,0.3), 0 0 30px rgba(255,75,145,0.2); }
@@ -39,7 +39,7 @@ st.markdown("""
     }
     .stTextInput>div>div>input, .stText, .stMarkdown, .stButton>button {
         color: #FFFFFF !important;
-        font-family: 'Delicious Handrawn', cursive !important;
+        font-family: 'Abril Fatface', serif !important;
     }
     p, span, .stMarkdown p, .stMarkdown span {
         font-family: 'Georgia', serif !important;
@@ -54,11 +54,11 @@ st.markdown("""
         display: none !important;
     }
     [data-testid="stSidebar"] .stRadio label {
-        font-family: 'Delicious Handrawn', cursive !important;
+        font-family: 'Abril Fatface', serif !important;
         color: #FFFFFF !important;
     }
     [data-testid="stSidebar"] * {
-        font-family: 'Delicious Handrawn', cursive !important;
+        font-family: 'Abril Fatface', serif !important;
     }
     [data-testid="stSidebar"] {
         background-color: #1C1A26 !important;
@@ -72,7 +72,7 @@ st.markdown("""
         color: #FF4B91; 
         font-size: 4.5rem; 
         font-weight: 800; 
-        font-family: 'Delicious Handrawn', cursive !important; 
+        font-family: 'Abril Fatface', serif !important; 
         letter-spacing: 2px; 
     }
     .stProgress>div>div>div>div { background-color: #FF4B91; }
@@ -90,7 +90,7 @@ st.markdown("""
         display: inline-block;
         width: 24px;
         height: 24px;
-        background-image: url("Probabilis/assets/sidebar_icon.png");
+        background-image: url("/assets/sidebar_icon.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -235,6 +235,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
