@@ -17,7 +17,7 @@ st.markdown("""
         font-family: 'Georgia', serif !important; 
     }
     h1, h2, h3, h4, h5, h6, .header, .stTitle {
-        font-family: 'Delicious Handrawn', cursive !important;
+        font-family: 'Abril Fatface', cursive !important;
     }
     @keyframes neonPulse {
         0%, 100% { box-shadow: 0 0 15px rgba(255,75,145,0.3), 0 0 30px rgba(255,75,145,0.2); }
@@ -235,6 +235,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
