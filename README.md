@@ -1,6 +1,8 @@
 # Probabilis
 # Probabilis | Password Analyzer & Security Trainer
 
+Try now: https://probabilis.streamlit.app/
+
 Probabilis is an interactive password analysis and learning platform built using **Streamlit**. It helps users understand password strength, vulnerabilities, and the principles behind secure password creation. The app combines educational challenges, quick checks, and deep analysis using metrics like Shannon entropy, Markov scores, and DCAI.
 
 ---
