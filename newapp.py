@@ -47,10 +47,11 @@ st.markdown("""
         font-family: 'Delicious Handrawn', cursive !important;
         color: #FFFFFF !important;
     }
-    [data-testid="stSidebar"] {
+    [data-testid="stSidebar"] * {
         font-family: 'Delicious Handrawn', cursive !important;
+    }
+    [data-testid="stSidebar"] {
         background-color: #1C1A26 !important;
-        color: #FFFFFF !important;
     }
     [data-testid="stSidebar"] .css-1d391kg {
         background-color: #1C1A26 !important;
@@ -79,7 +80,7 @@ st.markdown("""
         display: inline-block;
         width: 24px;
         height: 24px;
-        background-image: url("assets/sidebar_icon.png");
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/77/Streamlit-logo-primary-colormark-darktext.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -213,6 +214,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
