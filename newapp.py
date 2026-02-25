@@ -75,12 +75,8 @@ st.markdown("""
         position: relative;
         overflow: hidden !important;
     }
-    [data-testid="collapseSidebarButton"] svg { 
-        display: none !important; 
-    }
-    [data-testid="collapseSidebarButton"] * { 
-        font-size: 0 !important;
-        display: none !important; 
+    [data-testid="collapseSidebarButton"] { 
+        font-size: 0 !important; 
     }
     [data-testid="collapseSidebarButton"]::before { 
         content: "◀" !important; 
@@ -214,4 +210,5 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
