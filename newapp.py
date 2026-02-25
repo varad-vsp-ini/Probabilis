@@ -9,7 +9,7 @@ st.set_page_config(page_title="Password Analyzer | Team Ve", layout="centered")
 
 # --- CUSTOM STYLING (The Pink/Dark Theme) ---
 st.markdown("""
-    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <style>
     body, [data-testid="stAppViewContainer"], [data-testid="stMain"] { 
         background-color: #0F0F1A !important; 
@@ -235,6 +235,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
