@@ -40,7 +40,10 @@ st.markdown("""
     [data-testid="stSidebar"] .css-1aumxhk label, [data-testid="stSidebar"] .css-ckOyDo {
         color: #FFFFFF !important;
     }
-    [data-testid="stSidebar"] * {
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] div {
         color: #FFFFFF !important;
         font-family: 'Delicious Handrawn', cursive !important;
     }
@@ -207,6 +210,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
