@@ -85,10 +85,6 @@ st.markdown("""
         background-repeat: no-repeat;
         background-position: center;
     }
-    [data-testid="collapseSidebarButton"][aria-expanded="false"]::after {
-        transform: rotate(180deg);
-        transition: transform 0.2s ease-in-out;
-    }
     </style>
 """, unsafe_allow_html=True)
 st.markdown("<div class='header'>🔐 PASSWORD ANALYZER</div>", unsafe_allow_html=True)
@@ -214,6 +210,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
