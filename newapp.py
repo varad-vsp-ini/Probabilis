@@ -19,7 +19,6 @@ st.markdown("""
     h1, h2, h3, h4, h5, h6, .header, .stTitle {
         font-family: 'Delicious Handrawn', cursive !important;
     }
-    
     .window-box {
         background-color: #1A1A2E;
         border: 3px solid #FF4B91;
@@ -231,6 +230,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
