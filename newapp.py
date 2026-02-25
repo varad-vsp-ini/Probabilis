@@ -153,16 +153,34 @@ elif mode == "(B) QUICK CHECK":
     pwd = st.text_input("Enter password to test", type="password")
     
     if pwd:
-        results = analyze_password(pwd)  # Using the custom analysis function from pass_analyzer.py
-        final_score = results['final_security_score'] # 0 to 4
-        score = min(int(final_score * 3), 4)  # Scale to 0-4 for color mapping
-        strength_map = {
-            0: ("#FF0000", "WEAK!", 0.1), 1: ("#FF4500", "STILL WEAK", 0.3),
-            2: ("#FFCC00", "FAIR", 0.6), 3: ("#ADFF2F", "GOOD", 0.8), 4: ("#00FF00", "STRONG!", 1.0)
-        }
-        color, label, progress = strength_map[score]
-        st.markdown(f"<h2 style='color:{color}; text-align:center;'>{label}</h2>", unsafe_allow_html=True)
-        st.progress(progress)
+    results = analyze_password(pwd)
+    final_score = results['final_security_score']  # 0 to 1
+
+    progress = final_score  # Direct mapping to progress bar
+
+    # Flexible threshold logic
+    if progress < 0.30:
+        label = "WEAK!"
+        color = "#FF0000"
+    elif progress < 0.55:
+        label = "STILL WEAK"
+        color = "#FF4500"
+    elif progress < 0.70:
+        label = "FAIR"
+        color = "#FFCC00"
+    elif progress < 0.78:
+        label = "GOOD"
+        color = "#ADFF2F"
+    else:
+        label = "STRONG!"
+        color = "#00FF00"
+
+    st.markdown(
+        f"<h2 style='color:{color}; text-align:center;'>{label}</h2>",
+        unsafe_allow_html=True
+    )
+
+    st.progress(progress)
         if results['suggestions'] :
             st.markdown("---")
             st.subheader("💡 Suggestions")
@@ -196,3 +214,4 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
