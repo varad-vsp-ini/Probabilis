@@ -122,9 +122,7 @@ personas = [
     {"name": "Raj Malhotra", "dob": "02/11/1965", "info": "Famous Catchphrase: Senorita", "keywords": ["raj", "malhotra", "senorita", "1965"]},
 ]
 
-# --- SIDEBAR NAVIGATION ---
-st.sidebar.title("Select Mode")
-mode = st.sidebar.radio("Navigation", ["(A) LEARN", "(B) QUICK CHECK", "(C) DEEP ANALYSIS"])
+
 
 # --- MODE A: LEARN ---
 if mode == "(A) LEARN":
@@ -232,6 +230,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
