@@ -104,7 +104,7 @@ mode = st.sidebar.radio("Navigation", ["(A) LEARN", "(B) QUICK CHECK", "(C) DEEP
 mode_quotes = {
     "(A) LEARN": '"Security is not a product, but a process." — Bruce Schneier',
     "(B) QUICK CHECK": '"A password is only as strong as your weakest link."',
-    "(C) DEEP ANALYSIS": '"Solving a problem is often about creating the right Markov chain." — Anonymous'
+    "(C) DEEP ANALYSIS": '"Problem Solving is Often a Matter of Cooking Up an Appropriate Markov Chain." — Olle Häggström'
 }
 
 # --- DISPLAY NEON QUOTE ---
@@ -230,6 +230,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
