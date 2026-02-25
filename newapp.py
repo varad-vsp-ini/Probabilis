@@ -95,11 +95,12 @@ st.markdown("""
     
     </style>
 """, unsafe_allow_html=True)
-st.markdown("""
-<div class="window-box">
-    "Security is not a product, but a process." — Bruce Schneier
-</div>
-""", unsafe_allow_html=True)
+with st.container():
+    st.markdown("""
+    <div class="window-box">
+        "Security is not a product, but a process." — Bruce Schneier
+    </div>
+    """, unsafe_allow_html=True)
 st.markdown("<div class='header'>🔐 PROBABILIS</div>", unsafe_allow_html=True)
 
 # --- PERSONA DATABASE ---
@@ -223,6 +224,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
