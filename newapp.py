@@ -153,34 +153,34 @@ elif mode == "(B) QUICK CHECK":
     pwd = st.text_input("Enter password to test", type="password")
     
     if pwd:
-    results = analyze_password(pwd)
-    final_score = results['final_security_score']  # 0 to 1
-
-    progress = final_score  # Direct mapping to progress bar
-
-    # Flexible threshold logic
-    if progress < 0.30:
-        label = "WEAK!"
-        color = "#FF0000"
-    elif progress < 0.55:
-        label = "STILL WEAK"
-        color = "#FF4500"
-    elif progress < 0.70:
-        label = "FAIR"
-        color = "#FFCC00"
-    elif progress < 0.78:
-        label = "GOOD"
-        color = "#ADFF2F"
-    else:
-        label = "STRONG!"
-        color = "#00FF00"
-
-    st.markdown(
-        f"<h2 style='color:{color}; text-align:center;'>{label}</h2>",
-        unsafe_allow_html=True
-    )
-
-    st.progress(progress)
+        results = analyze_password(pwd)
+        final_score = results['final_security_score']  # 0 to 1
+    
+        progress = final_score  # Direct mapping to progress bar
+    
+        # Flexible threshold logic
+        if progress < 0.30:
+            label = "WEAK!"
+            color = "#FF0000"
+        elif progress < 0.55:
+            label = "STILL WEAK"
+            color = "#FF4500"
+        elif progress < 0.70:
+            label = "FAIR"
+            color = "#FFCC00"
+        elif progress < 0.78:
+            label = "GOOD"
+            color = "#ADFF2F"
+        else:
+            label = "STRONG!"
+            color = "#00FF00"
+    
+        st.markdown(
+            f"<h2 style='color:{color}; text-align:center;'>{label}</h2>",
+            unsafe_allow_html=True
+        )
+    
+        st.progress(progress)
         if results['suggestions'] :
             st.markdown("---")
             st.subheader("💡 Suggestions")
