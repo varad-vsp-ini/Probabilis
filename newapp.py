@@ -85,6 +85,9 @@ st.markdown("""
         background-repeat: no-repeat;
         background-position: center;
     }
+
+
+    
     </style>
 """, unsafe_allow_html=True)
 st.markdown("<div class='header'>🔐 PASSWORD ANALYZER</div>", unsafe_allow_html=True)
@@ -210,6 +213,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
