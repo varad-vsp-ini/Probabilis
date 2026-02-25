@@ -80,7 +80,7 @@ st.markdown("""
         display: inline-block;
         width: 24px;
         height: 24px;
-        background-image: url("/Probabilis/assets/sidebar_icon.png");
+        background-image: url("Probabilis/assets/sidebar_icon.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -90,7 +90,7 @@ st.markdown("""
     
     </style>
 """, unsafe_allow_html=True)
-st.markdown("<div class='header'>🔐 PASSWORD ANALYZER</div>", unsafe_allow_html=True)
+st.markdown("<div class='header'>🔐 PROBABILIS</div>", unsafe_allow_html=True)
 
 # --- PERSONA DATABASE ---
 # Characters from Hollywood and Bollywood
@@ -213,6 +213,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
