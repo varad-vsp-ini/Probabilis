@@ -40,13 +40,17 @@ st.markdown("""
     [data-testid="stSidebar"] .css-1aumxhk label, [data-testid="stSidebar"] .css-ckOyDo {
         color: #FFFFFF !important;
     }
+    [data-testid="collapseSidebarButton"] svg {
+        display: none !important;
+    }
     [data-testid="stSidebar"] .stRadio label {
         font-family: 'Delicious Handrawn', cursive !important;
         color: #FFFFFF !important;
     }
     [data-testid="stSidebar"] {
+        font-family: 'Delicious Handrawn', cursive !important;
         background-color: #1C1A26 !important;
-        color: #FFFFFF;
+        color: #FFFFFF !important;
     }
     [data-testid="stSidebar"] .css-1d391kg {
         background-color: #1C1A26 !important;
@@ -62,21 +66,27 @@ st.markdown("""
     }
     .stProgress>div>div>div>div { background-color: #FF4B91; }
     .stTextInput>div>div>input { background-color: #2D2D2D; color: #FF4B91; border: 2px solid #FF4B91; }
-    [data-testid="collapseSidebarButton"] { 
-        font-size: 0 !important;
+    [data-testid="collapseSidebarButton"] {
         background: transparent !important;
         border: none !important;
-        width: 2rem !important;
-        height: 2rem !important;
-        position: relative;
-        overflow: hidden !important;
+        width: 2.2rem !important;
+        height: 2.2rem !important;
+        padding: 0 !important;
     }
-    [data-testid="collapseSidebarButton"]::before { 
-        content: "◀" !important; 
-        display: inline-block !important;
-        color: #FFFFFF !important; 
-        font-size: 1.2rem !important;
-        font-family: 'Arial', sans-serif !important;
+
+    [data-testid="collapseSidebarButton"]::after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url("assets/sidebar_icon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    [data-testid="collapseSidebarButton"][aria-expanded="false"]::after {
+        transform: rotate(180deg);
+        transition: transform 0.2s ease-in-out;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -203,6 +213,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
