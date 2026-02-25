@@ -19,6 +19,10 @@ st.markdown("""
     h1, h2, h3, h4, h5, h6, .header, .stTitle {
         font-family: 'Delicious Handrawn', cursive !important;
     }
+    @keyframes neonPulse {
+        0%, 100% { box-shadow: 0 0 15px rgba(255,75,145,0.3), 0 0 30px rgba(255,75,145,0.2); }
+        50% { box-shadow: 0 0 25px rgba(255,75,145,0.6), 0 0 50px rgba(255,75,145,0.4); }
+    }
     .window-box {
         background-color: #1A1A2E;
         border: 3px solid #FF4B91;
@@ -31,6 +35,7 @@ st.markdown("""
         text-align: center;
         font-size: 1.3rem;
         text-shadow: 0 0 5px #FF4B91, 0 0 10px #FF4B91, 0 0 15px #FF4B91;
+        animation: neonPulse 2s infinite ease-in-out;
     }
     .stTextInput>div>div>input, .stText, .stMarkdown, .stButton>button {
         color: #FFFFFF !important;
@@ -230,6 +235,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
