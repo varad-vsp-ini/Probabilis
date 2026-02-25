@@ -26,7 +26,9 @@ st.markdown("""
         padding: 25px;
         margin-bottom: 20px;
         box-shadow: 0 0 15px rgba(255, 75, 145, 0.2);
-        <p>"Security is not a product, but a process." — Bruce Schneier</p>
+        <div class="window-box">
+            <p>"Security is not a product, but a process." — Bruce Schneier</p>
+        </div>
     }
     .stTextInput>div>div>input, .stText, .stMarkdown, .stButton>button {
         color: #FFFFFF !important;
@@ -214,6 +216,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
