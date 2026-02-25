@@ -80,7 +80,7 @@ st.markdown("""
         display: inline-block;
         width: 24px;
         height: 24px;
-        background-image: url("/app/assets/sidebar_icon.png");
+        background-image: url("/Probabilis/assets/sidebar_icon.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -213,6 +213,7 @@ elif mode == "(C) DEEP ANALYSIS":
 
 st.markdown("---")
 st.caption("Powered by Team Ve Analysis Engine")
+
 
 
 
